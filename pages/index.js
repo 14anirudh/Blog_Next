@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
@@ -21,11 +21,12 @@ export default function Home() {
       
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to my blog page</h1>
-        <Image
+        <img
           className={styles.img}
           src="/home.jpg"
           width={400}
           height={266}
+          alt="random image"
         />
         {/* div className={`${styles1.body} ${styles2.body}`} */}
         <p className={styles.description}>
