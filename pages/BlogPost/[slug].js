@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/BlogPost.module.css";
-import * as fs from 'fs';
+import * as fs from "fs";
 
 const Slug = (props) => {
+  function createMarkup(c) {
+    return {__html:c};
+  }
   const [display, setDisplay] = useState(props.blog);
   // const router = useRouter();
   // useEffect(() => {
@@ -25,7 +28,7 @@ const Slug = (props) => {
       <main className={styles.main}>
         <h1>{display && display.title}</h1>
         <hr />
-        <div>{display && display.content}</div>
+        {display && <div dangerouslySetInnerHTML={createMarkup(display.content)}></div>}
       </main>
     </div>
   );
@@ -61,7 +64,7 @@ export async function getStaticProps(context) {
   const { slug } = context.params;
   let blog = await fs.promises.readFile(`blogData/${slug}.json`, "utf-8");
   return {
-    props: { blog:JSON.parse(blog) }, // will be passed to the page component as props
+    props: { blog: JSON.parse(blog) }, // will be passed to the page component as props
   };
 }
 

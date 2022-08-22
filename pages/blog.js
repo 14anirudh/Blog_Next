@@ -27,7 +27,7 @@ function Blog(props) {
                 <h1 className={styles.blogItemHead}>{items.title}</h1>
               </Link>
               <p className={styles.blogItemP}>
-                {items.content.substr(0, 200) + "..."}
+                {items.metadesc.substr(0, 200) + "..."}
                 <Link href={`BlogPost/${items.slug}`}>
                   <button className={styles.blogbtn}>Read more</button>
                 </Link>
