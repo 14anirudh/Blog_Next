@@ -9,7 +9,7 @@ export default function handler(req, res) {
     }
     // console.log(req.query.slug)
     //string to object JSON.parse
-    res.status(200).json(JSON.parse(data))
+    res.status(200).json(JSON.parse("data"))
   })
   
 }
