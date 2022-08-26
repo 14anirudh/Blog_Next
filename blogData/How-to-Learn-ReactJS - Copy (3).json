@@ -1,7 +1,0 @@
-{
-    "title":"How to learn ReactJS",
-    "content":"You can use online code editors to practice, or you can use Create React App.I have setup a development environment in JSFiddle and in Codepen.To grasp all the fundamentals of React, you can start with the following tutorials:React official documentation by React Beginners guide to React by Kent C. Dodds Fundamentals of React by Samer Buna By now, you should have a basic idea of the fundamentals of React. Its enough to start developing simple web apps in React. Now, take a look at the React official tutorial: React Official tutorial by React Its a well-written article covering the fundamentals of React. And it also explains the specific topics very clearly. Last but not least, learn how to connect to APIs with React apps: Fetching API with React.js by Ethan Jarrell ",
-    "author":"anirudh gautam",
-    "slug":"How-to-Learn-ReactJS",
-    "metadesc":"You can use online code editors to practice, or you can use Create React App.I have setup a development environment in JSFiddle and in Codepen.To grasp all the fundamentals of React, you can start with the following tutorials:React official documentation by React Beginners guide to React by Kent C. Dodds Fundamentals of React by Samer Buna By now, you should have a basic idea of the fundamentals of React."
-}
