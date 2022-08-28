@@ -33,17 +33,17 @@ export default function Home() {
           Get started by reading the one liked by the world 
         </p>
         {/* <p className="stylejsx">style jsx demo</p> */}
-        <div className="blogs">
+        <div className={styles.blogs}>
           <h2>Popular Blogs</h2>
-          <div className="blogItem">
+          <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
           </div>
-          <div className="blogItem">
+          <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
           </div>
-          <div className="blogItem">
+          <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
           </div>

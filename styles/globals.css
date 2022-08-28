@@ -13,8 +13,12 @@ a {
 
 * {
   box-sizing: border-box;
-  /* background-image: url("../public/home.jpg"); */
+  /* background-image: url("../public/home.jpg");  */
+  padding: 0;
+  margin: 0;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
