@@ -49,23 +49,23 @@ const Slug = (props) => {
 //STATIC SITE GENERATION
 
 //get static path to tell next how many pages to be generated through slug.js
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { slug: "How-to-Learn-JavaScript" } },
-      { params: { slug: "How-to-Learn-ReactJs" } },
-      { params: { slug: "How-to-Learn-NEXTJs" } },
-    ],
-    fallback: false, // can also be true or 'blocking'
-  };
-}
-//get static props to get the props
-export async function getStaticProps(context) {
-  const { slug } = context.params;
-  let blog = await fs.promises.readFile(`blogData/${slug}.json`, "utf-8");
-  return {
-    props: { blog: JSON.parse(blog) }, // will be passed to the page component as props
-  };
-}
+// export async function getStaticPaths() {
+//   return {
+//     paths: [
+//       { params: { slug: "How-to-Learn-JavaScript" } },
+//       { params: { slug: "How-to-Learn-ReactJs" } },
+//       { params: { slug: "How-to-Learn-NEXTJs" } },
+//     ],
+//     fallback: false, // can also be true or 'blocking'
+//   };
+// }
+// //get static props to get the props
+// export async function getStaticProps(context) {
+//   const { slug } = context.params;
+//   let blog = await fs.promises.readFile(`blogData/${slug}.json`, "utf-8");
+//   return {
+//     props: { blog: JSON.parse(blog) }, // will be passed to the page component as props
+//   };
+// }
 
 export default Slug;

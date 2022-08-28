@@ -74,21 +74,21 @@ function Blog(props) {
 // }
 
 //STATIC SITE GENERATION
-export async function getStaticProps(context) {
-  let data = await fs.promises.readdir("blogData");
-  let allcount = data.length;
-  let myfile;
-  let allBlogs = [];
-  for (let index = 0; index < 2; index++) {
-    const item = data[index];
-    // console.log(item);
-    myfile = await fs.promises.readFile("blogData/" + item, "utf-8");
-    allBlogs.push(JSON.parse(myfile));
-  }
+// export async function getStaticProps(context) {
+//   let data = await fs.promises.readdir("blogData");
+//   let allcount = data.length;
+//   let myfile;
+//   let allBlogs = [];
+//   for (let index = 0; index < 2; index++) {
+//     const item = data[index];
+//     // console.log(item);
+//     myfile = await fs.promises.readFile("blogData/" + item, "utf-8");
+//     allBlogs.push(JSON.parse(myfile));
+//   }
 
-  return {
-    props: { allBlogs, allcount }, // will be passed to the page component as props
-  };
-}
+//   return {
+//     props: { allBlogs, allcount }, // will be passed to the page component as props
+//   };
+// }
 
 export default Blog;
