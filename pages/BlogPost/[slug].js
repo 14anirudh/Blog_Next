@@ -54,7 +54,7 @@ const Slug = (props) => {
      paths: [
      { params: { slug: "How-to-Learn-JavaScript" } },
        { params: { slug: "How-to-Learn-ReactJS" } },
-       { params: { slug: "How-to-Learn-NEXTJs" } },
+       { params: { slug: "How-to-Learn-Next" } },
      ],
      fallback: false, // can also be true or 'blocking'
    };
