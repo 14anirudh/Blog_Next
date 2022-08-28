@@ -7,18 +7,18 @@ const Hamburger_menu = () => {
     <div className={styles.menu}>
       <div className={styles.menu_inner}>
         <ul className={styles.menu_nav}>
-        <a href="/">
+        <Link href="/">
           <li>Home</li>
-        </a>
-        <a href="/blog">
+        </Link>
+        <Link href="/blog">
           <li>Blogs</li>
-        </a>
-        <a href="/about">
+        </Link>
+        <Link href="/about">
           <li>About</li>
-        </a>
-        <a href="/contact">
+        </Link>
+        <Link href="/contact">
           <li>Contact</li>
-        </a>
+        </Link>
         </ul>
       </div>
     </div>
