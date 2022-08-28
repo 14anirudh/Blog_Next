@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/BlogPost.module.css";
-// import * as fs from "fs";
+//import * as fs from "fs";
 
 const Slug = (props) => {
   function createMarkup(c) {
@@ -35,16 +35,16 @@ const Slug = (props) => {
 };
 
 //SERVER SIDE RENDERING
-// export async function getServerSideProps(context) {
-//   // const router = useRouter();
-//   // console.log(context);
-//   const { slug } = context.query;
-//   let data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`);
-//   let blog = await data.json();
-//   return {
-//     props: { blog }, // will be passed to the page component as props
-//   };
-// }
+ export async function getServerSideProps(context) {
+   // const router = useRouter();
+   // console.log(context);
+   const { slug } = context.query;
+   let data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`);
+   let blog = await data.json();
+   return {
+     props: { blog }, // will be passed to the page component as props
+   };
+ }
 
 //STATIC SITE GENERATION
 
