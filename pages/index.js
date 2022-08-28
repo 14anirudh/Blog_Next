@@ -30,7 +30,7 @@ export default function Home() {
         />
         {/* div className={`${styles1.body} ${styles2.body}`} */}
         <p className={styles.description}>
-          Get started by reading the one liked by the world 
+          Get started by taking a look on the one liked by the world 
         </p>
         {/* <p className="stylejsx">style jsx demo</p> */}
         <div className={styles.blogs}>
