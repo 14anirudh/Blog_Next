@@ -8,16 +8,16 @@ const Hamburger_menu = () => {
       <div className={styles.menu_inner}>
         <ul className={styles.menu_nav}>
         <Link href="/">
-          <li>Home</li>
+          <li ><a>Home</a></li>
         </Link>
         <Link href="/blog">
-          <li>Blogs</li>
+          <li><a>Blogs</a></li>
         </Link>
         <Link href="/about">
-          <li>About</li>
+          <li><a>About</a></li>
         </Link>
         <Link href="/contact">
-          <li>Contact</li>
+          <li><a>Contact</a></li>
         </Link>
         </ul>
       </div>

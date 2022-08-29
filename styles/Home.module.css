@@ -163,6 +163,30 @@
   border-radius: 5px;
   margin-top: 10px !important;
 }
+.ul_element {
+  display: inline-block;
+  position: relative;
+
+}
+.ul_element:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+.ul_element:hover::after {
+  transform: scaleX(1);
+  /* transform-origin: bottom top; */
+}
+/* .ul_element{
+color:red
+} */
 
 @media (max-width: 600px) {
   .grid {

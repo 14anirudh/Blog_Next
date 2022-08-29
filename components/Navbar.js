@@ -10,16 +10,24 @@ const Navbar = () => {
     <nav className={styles.mainnav}>
       <ul className={styles.nav_ul}>
         <Link href="/">
-          <li>Home</li>
+          <li>
+            <p className={styles.ul_element}>Home</p>
+          </li>
         </Link>
         <Link href="/blog">
-          <li>Blogs</li>
+          <li>
+            <p className={styles.ul_element}>Blogs</p>
+          </li>
         </Link>
         <Link href="/about">
-          <li>About</li>
+          <li>
+            <p className={styles.ul_element}>About</p>
+          </li>
         </Link>
         <Link href="/contact">
-          <li>Contact</li>
+          <li>
+            <p className={styles.ul_element}>Contact</p>
+          </li>
         </Link>
       </ul>
       <div className={styles.hamburger} onClick={() => setOpen(!open)}>
