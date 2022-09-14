@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect} from "react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { Twirl as Hamburger } from "hamburger-react";
@@ -6,6 +6,19 @@ import Hamburger_menu from "./Hamburger_menu";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const handleClick = () => setOpen(!open);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
     <nav className={styles.mainnav}>
       <ul className={styles.nav_ul}>
@@ -30,10 +43,37 @@ const Navbar = () => {
           </li>
         </Link>
       </ul>
-      <div className={styles.hamburger} onClick={() => setOpen(!open)}>
+      <div className={styles.hamburger} onClick={handleClick}>
         <Hamburger color="#4FD1C5" />
       </div>
-      {open && <Hamburger_menu />}
+      {open && (
+        <div className={styles.menu}>
+          <div className={styles.menu_inner}>
+            <ul className={styles.menu_nav}>
+              <Link href="/">
+                <li onClick={handleClick}>
+                  <a>Home</a>
+                </li>
+              </Link>
+              <Link href="/blog">
+                <li onClick={handleClick}>
+                  <a>Blogs</a>
+                </li>
+              </Link>
+              <Link href="/about">
+                <li onClick={handleClick}>
+                  <a>About</a>
+                </li>
+              </Link>
+              <Link href="/contact">
+                <li onClick={handleClick}>
+                  <a>Contact</a>
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

@@ -11,6 +11,14 @@
   justify-content: flex-start;
   padding-top: 3rem;
 }
+/* .mainnav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(175, 169, 169);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  z-index: 2;
+} */
 
 .nav_ul li {
   color: black;
@@ -195,6 +203,8 @@ color:red
   }
   .mainnav .nav_ul {
     display: none;
+
+
   }
   .hamburger {
     display: flex;
