@@ -2,7 +2,6 @@ import React, { useState,useEffect} from "react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { Twirl as Hamburger } from "hamburger-react";
-import Hamburger_menu from "./Hamburger_menu";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

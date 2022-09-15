@@ -54,7 +54,7 @@ export default function Home() {
                       Node package Manager
                     </h1>
                     <p className="leading-relaxed mb-5">
-                      npm is the world's largest Software Registry. The registry
+                      npm is the world&apos;s largest Software Registry. The registry
                       contains over 800,000 code packages. Open-source
                       developers use npm to share software. Many organizations
                       also use npm to manage private develo...
