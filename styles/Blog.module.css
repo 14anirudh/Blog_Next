@@ -11,8 +11,10 @@
 .blogItemHead{
     cursor: pointer;
     margin: 0;
-
-}
+    font-size: 2rem;
+    font-weight: 700;
+    
+  }
   
 .blogItemP{
     max-width: 60vw;
