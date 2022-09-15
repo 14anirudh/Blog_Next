@@ -24,7 +24,7 @@ export default function Home() {
         <img
           className={styles.img}
           src="/home.jpg"
-          width={400}
+          width={500}
           height={266}
           alt="random image"
         />

@@ -45,7 +45,7 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Contact Us</h1>
+      <h1 className="mt-8 text-3xl text-[#29182E] font-bold">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.mb3}>
           <label htmlFor="name" className={styles.formlabel}>
@@ -104,9 +104,11 @@ const Contact = () => {
             id="desc"
           />
         </div>
+        <div className="flex justify-center items-center mb-60">
         <button type="submit" className={styles.btn}>
-          Submit
+          Lets Collaborate
         </button>
+        </div>
       </form>
     </div>
   );

@@ -1,25 +1,20 @@
-import React, { useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { Twirl as Hamburger } from "hamburger-react";
+import Footer from "./Footer";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [shadow, setShadow] = useState(false);
+
   const handleClick = () => setOpen(!open);
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
 
   return (
     <nav className={styles.mainnav}>
+      <Link href="/">
+        <img className={styles.logo} src="/navlogo.png" alt="random image" />
+      </Link>
+
       <ul className={styles.nav_ul}>
         <Link href="/">
           <li>
@@ -43,7 +38,8 @@ const Navbar = () => {
         </Link>
       </ul>
       <div className={styles.hamburger} onClick={handleClick}>
-        <Hamburger color="#4FD1C5" />
+        <Hamburger color="#f5e8da" />
+        <img src="/navlogo.png" alt="logo" className="w-32 ml-20 " />
       </div>
       {open && (
         <div className={styles.menu}>

@@ -1,5 +1,5 @@
 .container {
-    max-width: 45vw;
+    max-width: 65vw;
     margin: auto;
 }
 
@@ -27,11 +27,11 @@
 }
 
 .btn {
-    color: white;
-    background: black;
+    color: #f5e8da;
+    background: #29182E;
     padding: 7px 6px;
     cursor: pointer;
     border-radius: 6px;
-    font-size: 12px;
-    margin-bottom: 9px;
+    font-size: 18px;
+
 }
