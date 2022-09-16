@@ -57,7 +57,7 @@ const Navbar = () => {
               </Link>
               <Link href="/about">
                 <li onClick={handleClick}>
-                  <a>About</a>
+                  <a>About </a>
                 </li>
               </Link>
               <Link href="/contact">
