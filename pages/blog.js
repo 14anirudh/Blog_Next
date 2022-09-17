@@ -6,7 +6,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 function Blog(props) {
   const [display, setDisplay] = useState(props.allBlogs);
-  const [count, setcount] = useState(2);
+  const [count, setcount] = useState(1);
   const fetchData = async () => {
     let d = await fetch(`http://localhost:3000/api/blogs/?count=${count + 2}`);
     setcount(count + 2);

@@ -220,6 +220,9 @@ color:red
     display: flex;
     z-index: 2;
     background-color: #29182e;
+    justify-content: center;
+    align-items: center; 
+    
   }
   .hamburger h1 {
     margin-bottom: 8px;

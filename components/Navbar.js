@@ -38,8 +38,8 @@ const Navbar = () => {
         </Link>
       </ul>
       <div className={styles.hamburger} onClick={handleClick}>
-        <Hamburger color="#f5e8da" />
-        <img src="/navlogo.png" alt="logo" className="w-32 ml-20 " />
+        {/* <Hamburger color="#f5e8da" /> */}
+        <img src="/navlogo.png" alt="logo" className="w-32 " />
       </div>
       {open && (
         <div className={styles.menu}>

@@ -19,8 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main} >
-        
+      <main className={styles.main}>
         <img
           className={styles.img}
           src="/home.jpg"
@@ -54,10 +53,15 @@ export default function Home() {
                       Node package Manager
                     </h1>
                     <p className="leading-relaxed mb-5">
-                      npm is the world&apos;s largest Software Registry. The registry
-                      contains over 800,000 code packages. Open-source
+                      npm is the world&apos;s largest Software Registry. The
+                      registry contains over 800,000 code packages. Open-source
                       developers use npm to share software. Many organizations
                       also use npm to manage private develo...
+                      <Link href="/npm">
+                        <button className="font-bold text-black">
+                          find out more
+                        </button>
+                      </Link>
                     </p>
                     <a className="inline-flex items-center">
                       <img
@@ -92,7 +96,15 @@ export default function Home() {
                       Basics of crypto
                     </h1>
                     <p className="leading-relaxed mb-5">
-                    A cryptocurrency, crypto-currency, or crypto is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to upho...
+                      A cryptocurrency, crypto-currency, or crypto is a digital
+                      currency designed to work as a medium of exchange through
+                      a computer network that is not reliant on any central
+                      authority, such as a governme...
+                      <Link href="/crypto">
+                        <button className="font-bold text-black">
+                          find out more
+                        </button>
+                      </Link>
                     </p>
                     <a className="inline-flex items-center">
                       <img
@@ -121,13 +133,21 @@ export default function Home() {
                   </div>
                   <div className="flex-grow pl-6">
                     <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">
-                     OPERATING SYSTEM
+                      OPERATING SYSTEM
                     </h2>
                     <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
                       Digging Inside CPU
                     </h1>
                     <p className="leading-relaxed mb-5">
-                    A kernel is that part of the operating system which interacts directly with the hardware and performs the most crucial tasks. A microkernel is much smaller in size than a conventional kernel and supp...
+                      A kernel is that part of the operating system which
+                      interacts directly with the hardware and performs the most
+                      crucial tasks. A microkernel is much smaller in size than
+                      a conventional kernel and supp...
+                      <Link href="/kernel">
+                        <button className="font-bold text-black">
+                          find out more
+                        </button>
+                      </Link>
                     </p>
                     <a className="inline-flex items-center">
                       <img
