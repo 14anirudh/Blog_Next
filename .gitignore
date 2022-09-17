@@ -6,9 +6,9 @@ contact/
 /node_modules
 /.pnp
 .pnp.js
-crypto.js
-kernel.js
-npm.js
+pages/crypto.js
+pages/kernel.js
+pages/npm.js
 
 # testing
 /coverage
