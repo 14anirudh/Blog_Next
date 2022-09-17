@@ -4,7 +4,7 @@ const kernel = () => {
   return (
     <div className="mb-80 mx-16">
       <h1 className="text-center text-4xl my-4">Kernel:Brain of Operating Systems</h1>
-      The kernel is a computer program at the core of a computer's operating
+      The kernel is a computer program at the core of a computer&apos;s operating
       system and generally has complete control over everything in the system.
       It is the portion of the operating system code that is always resident in
       memory and facilitates interactions between hardware and software

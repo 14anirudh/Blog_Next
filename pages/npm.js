@@ -21,7 +21,7 @@ const npm = () => {
       packages.
       <br/>The source of security vulnerabilities were taken from reports
       found on the Node Security Platform (NSP) and has been integrated with npm
-      since npm's acquisition of NSP. npm can manage packages that are local
+      since npm&apos;s acquisition of NSP. npm can manage packages that are local
       dependencies of a particular project, as well as globally-installed
       JavaScript tools. When used as a dependency manager for a local project,
       npm can install, in one command, all the dependencies of a project through
