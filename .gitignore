@@ -1,12 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-
+blogData/
 contact/
 /node_modules
 /.pnp
 .pnp.js
-
+crypto.js
+kernel.js
+npm.js
 
 # testing
 /coverage
