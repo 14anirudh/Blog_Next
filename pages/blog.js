@@ -8,7 +8,9 @@ function Blog(props) {
   const [display, setDisplay] = useState(props.allBlogs);
   const [count, setcount] = useState(1);
   const fetchData = async () => {
-    let d = await fetch(`http://localhost:3000/api/blogs/?count=${count + 2}`);
+    let d = await fetch(`http://localhost:3000/api/blogs/?count=${count + 2}`,{
+      mode: 'no-cors'
+    });
     setcount(count + 2);
     let data = await d.json();
     setDisplay(data);
