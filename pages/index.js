@@ -4,8 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Home() {
-  const cors = require("cors");
-  app.use(cors());
+  
   return (
     <div className={styles.container}>
       {/* <style jsx>  //component level scope write global in front of style jsx to make it global  

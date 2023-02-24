@@ -9,10 +9,14 @@ export default async function handler(req, res) {
   let allBlogs = [];
   for (let index = 0; index < data.length; index++) {
     const item = data[index];
-    console.log(item);
+    // console.log(item);
     myfile = await fs.promises.readFile("blogData/" + item, "utf-8");
     allBlogs.push(JSON.parse(myfile));
   }
   res.status(200).json(allBlogs);
+  app.use((req, res, next) => {
+    res.header({"Access-Control-Allow-Origin": "*"});
+    next();
+  }) 
 }
 //used aync await to get all the data in the array
