@@ -19,7 +19,7 @@ function Blog(props) {
         <InfiniteScroll
           dataLength={display.length} //This is important field to render the next data
           next={fetchData}
-          hasMore={props.allcount !== display.length}
+          hasMore={true}
           loader={<h4>Loading...</h4>}
           endMessage={
             <p style={{ textAlign: "center" }}>
