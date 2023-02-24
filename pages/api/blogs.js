@@ -2,7 +2,9 @@
 import * as fs from "fs";
 
 export default async function handler(req, res) {
+  
   // console.log(req.query.count);
+
   let data = await fs.promises.readdir("blogData");
   data = data.slice(0, parseInt(req.query.count));
   let myfile;
@@ -14,9 +16,6 @@ export default async function handler(req, res) {
     allBlogs.push(JSON.parse(myfile));
   }
   res.status(200).json(allBlogs);
-  app.use((req, res, next) => {
-    res.header({"Access-Control-Allow-Origin": "*"});
-    next();
-  }) 
+  
 }
 //used aync await to get all the data in the array
